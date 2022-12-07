@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather App</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">            
+</head>
+<body>
+    <h1>Weather App</h1>
+   
+  
+    <div class="container">
+        <div class="form">
+                <h2>Search for a city</h2>
+                <div class="input-container">
+                    <input type="text" id="input" placeholder="Enter a city">
+                    <button id="search">
+                            <i class="fa fa-search"></i>
+                    </button>
+                </div>
+                <span id="error" class="hidden"></span>
+        </div>
+        <div id="weather" class="hidden">
+            <h2>
+                <i class="fa fa-map-marker"></i>
+                <span id="city"></span>
+                <img src="" id="country" alt="Bandeira do país">
+            </h2>
+            <p id="temp">
+                <span id="temp-value"></span>
+                &deg;C
+            </p>
+            <div id="description">
+                <p id="conditions"></p>
+                <img src="" alt="Condições do tempo" id="weather-icon">
+            </div>
+            <div id="details">
+                <p id="humidity">
+                    <i class="fas fa-tint"></i>
+                    <span></span>
+                </p>
+                <p id="wind">
+                    <i class="fas fa-wind"></i>
+                    <span></span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="./build.js"></script>
+</body>
+</html>

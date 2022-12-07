@@ -1,0 +1,162 @@
+$primary : rgb(10, 60, 160);
+$secondary : rgb(57, 186, 255);
+$neutro : rgb(255, 255, 255);
+$sec_neutro : #ccc;
+$fontcolor: rgb(20, 32, 141);
+
+* {
+    margin: 0;
+    font-size: 1.2rem;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient($secondary, $primary 100%);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+
+
+h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.container {
+    max-width: 80%;
+    min-width: 300px;
+    max-height: 80%;
+    min-height: 300px;
+    width: 500px;
+    background: rgb(163, 188, 207);
+    padding: 50px;
+    color: $fontcolor;
+    border-radius: 10px;
+
+    h2 {
+        font-weight: 600;
+        text-align: center;
+    }
+
+    p {
+
+        font-weight: 300;
+        text-align: center;
+    }
+    #error{
+        color: red;
+        font-size: 15px;
+        width: 100%;
+        font-style: italic;
+
+
+    }
+
+    .input-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0;
+
+        input {
+            min-width: 200px;
+            padding: 10px;
+            border: 1px solid $sec_neutro;
+            border-radius: 5px;
+            outline: none;
+            font-size: 1.2rem;
+            font-weight: 300;
+        }
+
+        button {
+            padding: 10px;
+            border: 1px solid $sec_neutro;
+            border-radius: 5px;
+            outline: none;
+            background-color: $primary;
+            font-size: 1.2rem;
+            font-weight: 300;
+            color: $neutro;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+    }
+
+    #weather {
+        border-top: 2px solid $fontcolor;
+        padding-top: 20px;
+        margin-top: 20px;
+        text-align: center;
+
+        h2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 0.6rem;
+
+            i {
+                font-size: 1rem;
+            }
+
+            span {
+                margin: 0.6rem;
+                font-size: 1.5rem;
+            }
+
+            #country {
+                height: 15px;
+
+            }
+
+        }
+        #temp{
+
+            font-size: 2.5rem;
+            margin: .6rem;
+            font-weight: 500;
+            span{
+                font-size: 2.5rem;
+            }
+        }
+        #description {
+            margin: 1rem;
+            display: flex;
+            text-transform: capitalize;
+            justify-content: center;
+            align-items: center;
+            p {
+                font-size: 1rem;
+            }
+
+
+        }
+
+        #details {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+
+           #humidity{
+            border-right: 1px solid $fontcolor;
+            margin: .6rem;
+            padding: .6rem;
+           }
+        }
+    }
+
+
+}
+.hidden {
+    display: none;
+}
