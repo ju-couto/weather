@@ -52,7 +52,8 @@ h1 {
         font-weight: 300;
         text-align: center;
     }
-    #error{
+
+    #error {
         color: red;
         font-size: 15px;
         width: 100%;
@@ -119,21 +120,25 @@ h1 {
             }
 
         }
-        #temp{
+
+        #temp {
 
             font-size: 2.5rem;
             margin: .6rem;
             font-weight: 500;
-            span{
+
+            span {
                 font-size: 2.5rem;
             }
         }
+
         #description {
             margin: 1rem;
             display: flex;
             text-transform: capitalize;
             justify-content: center;
             align-items: center;
+
             p {
                 font-size: 1rem;
             }
@@ -145,18 +150,19 @@ h1 {
             display: flex;
             justify-content: center;
             align-items: center;
-    
 
-           #humidity{
-            border-right: 1px solid $fontcolor;
-            margin: .6rem;
-            padding: .6rem;
-           }
+
+            #humidity {
+                border-right: 1px solid $fontcolor;
+                margin: .6rem;
+                padding: .6rem;
+            }
         }
     }
 
 
 }
+
 .hidden {
     display: none;
 }

@@ -1,7 +1,7 @@
 const path = require("path");
 
 module.exports = {
-  mode: "development",
+    mode : 'development',
   entry: "./src/index.js",
   output: {
     path: path.resolve(__dirname, "public"),
@@ -13,5 +13,5 @@ module.exports = {
     },
     compress: true,
     port: 9000,
-  },
+  }
 };
